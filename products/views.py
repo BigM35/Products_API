@@ -36,6 +36,6 @@ def select_product(request, pk):
         serializer.save()
         return Response(serializer.data)
     elif request.method == 'DELETE':  
-        product.Delete() 
+        product.delete() 
         return Response(status=status.HTTP_204_NO_CONTENT)
 
